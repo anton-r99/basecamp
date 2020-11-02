@@ -24,17 +24,17 @@ Date:   Mon Nov 2 16:34:06 2020 +0200
 (base) tony@tony:~/basecamp/basecamp$ git reset HEAD something.txt
 (base) tony@tony:~/basecamp/basecamp$ git checkout -b testbranch
 Switched to a new branch 'testbranch'
-(base) tony@tony:~/basecamp/basecamp$ vim willbedeleted.txt
+(base) tony@tony:~/basecamp/basecamp$ vim delete.txt
 (base) tony@tony:~/basecamp/basecamp$ git add .
-(base) tony@tony:~/basecamp/basecamp$ git commit -m "added willbedeleted.txt"
-[testbranch 1bf5e7f] added willbedeleted.txt
- 1 file changed, 1 insertion(+)
- create mode 100644 willbedeleted.txt
-(base) tony@tony:~/basecamp/basecamp$ git rm willbedeleted.txt
-rm 'willbedeleted.txt'
-(base) tony@tony:~/basecamp/basecamp$ git commit -m "removed willbedeleted.txt from the repo"
-[hw1 88d9d30] removed willbedeleted.txt from the repo
- 1 file changed, 1 deletion(-)
- delete mode 100644 willbedeleted.txt
+(base) tony@tony:~/basecamp/basecamp$ git commit -m "added delete.txt"
+[hw1 5945a83] added delete.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 delete.txt
+(base) tony@tony:~/basecamp/basecamp$ git rm --cached delete.txt
+rm 'delete.txt'
+(base) tony@tony:~/basecamp/basecamp$ git commit -m "removed deleted.txt"
+[hw1 c9fc6cf] removed deleted.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 delete.txt
 (base) tony@tony:~/basecamp/basecamp$ git push -u origin hw1
-.
+
