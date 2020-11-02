@@ -2,5 +2,24 @@
 (base) tony@tony:~/basecamp/basecamp$ git checkout hw1
 Switched to branch 'hw1'
 Your branch is up to date with 'origin/hw1'.
-(base) tony@tony:~/basecamp/basecamp$ vim hw2log.txt + merge conflict
+(base) tony@tony:~/basecamp/basecamp$ vim hw2log.txt //merge conflict
+(base) tony@tony:~/basecamp/basecamp$ git merge hw1
+Auto-merging hw2log.txt
+CONFLICT (add/add): Merge conflict in hw2log.txt
+Automatic merge failed; fix conflicts and then commit the result.
+(base) tony@tony:~/basecamp/basecamp$ cat hw2log.txt
 (base) tony@tony:~/basecamp/basecamp$ vim hw2log.txt
+(base) tony@tony:~/basecamp/basecamp$ git checkout hw1
+Switched to branch 'hw1'
+Your branch is up to date with 'origin/hw1'.
+<<<<<<< HEAD
+(base) tony@tony:~/basecamp/basecamp$ vim hw2log.txt + merge conflict
+=======
+(base) tony@tony:~/basecamp/basecamp$ vim hw2log.txt
+>>>>>>> hw1
+
+(base) tony@tony:~/basecamp/basecamp$ vim hw2log.txt
+(base) tony@tony:~/basecamp/basecamp$ git add hw2log.txt
+(base) tony@tony:~/basecamp/basecamp$ git commit -m "merged and resolved the conflict in hw2log.txt"
+[hw2 b472c27] merged and resolved the conflict in hw2log.txt
+
