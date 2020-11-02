@@ -3,4 +3,4 @@
 Switched to branch 'hw1'
 Your branch is up to date with 'origin/hw1'.
 (base) tony@tony:~/basecamp/basecamp$ vim hw2log.txt + merge conflict
-
+(base) tony@tony:~/basecamp/basecamp$ vim hw2log.txt
